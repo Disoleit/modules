@@ -1,4 +1,4 @@
-import Character from "./domain.js";
+const Character = require('./domain');
 
 class Game {
   start() {
@@ -14,3 +14,10 @@ function readGameSaving() {
 
 function writeGameSaving() {
 }
+
+module.exports = {
+  Game,
+  GameSavingData,
+  readGameSaving,
+  writeGameSaving
+};
